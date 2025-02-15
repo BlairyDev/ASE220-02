@@ -43,3 +43,6 @@ Male icon:
 
 Arrow icon:
 <a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Kirill Kazachek - Flaticon<a>
+
+Exit icon:
+<a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by The Icon Tree - Flaticon</a>
