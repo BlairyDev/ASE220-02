@@ -32,6 +32,35 @@ Image by <a href="https://pixabay.com/users/blue-heaven-6316585/?utm_source=link
 African Pygmy Hedgehog:
 Image by <a href="https://pixabay.com/users/amayaeguizabal-151412/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=468228">Amaya Eguizábal</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=468228">Pixabay</a>
 
+English Bulldog:
+Image by <a href="https://pixabay.com/users/juanmt19-3734743/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2895656">Juan Martínez</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2895656">Pixabay</a>
+
+African Grey Parrot:
+Image by <a href="https://pixabay.com/users/akbarnemati-6513077/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7188220">Akbar Nemati</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7188220">Pixabay</a>
+
+Bombay Cat:
+Image by <a href="https://pixabay.com/users/miller_eszter-5317196/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3739702">Eszter Miller</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3739702">Pixabay</a>
+
+Dutch Rabbit:
+Image by <a href="https://pixabay.com/users/nennieinszweidrei-10084616/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9307357">Annette Meyer</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9307357">Pixabay</a>
+
+Syrian Hamster:
+Image by <a href="https://pixabay.com/users/metalboy25-6273386/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3878853">Martin Javorek</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3878853">Pixabay</a>
+
+Border Collie:
+Image by <a href="https://pixabay.com/users/dsbago-14378996/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6391794">Ago DSB</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6391794">Pixabay</a>
+
+Amazon Parrot:
+Image by <a href="https://pixabay.com/users/davidclode-43394210/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9099001">David Clode</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9099001">Pixabay</a>
+
+Main Coon:
+Image by <a href="https://pixabay.com/users/marigard-8134544/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3497280">Beate Felten-Leidel</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3497280">Pixabay</a>
+
+Labrador Retriever:
+Image by <a href="https://pixabay.com/users/ryniu1234-902661/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=805863">Ryniu1234</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=805863">Pixabay</a>
+
+Leopard Gecko:
+Image by <a href="https://pixabay.com/users/torstensimon-5039407/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3651875">torstensimon</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3651875">Pixabay</a>
 
 # Links to Icons that I have used:
 
@@ -44,5 +73,3 @@ Male icon:
 Arrow icon:
 <a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Kirill Kazachek - Flaticon<a>
 
-Exit icon:
-<a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by The Icon Tree - Flaticon</a>
