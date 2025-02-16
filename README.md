@@ -62,6 +62,9 @@ Image by <a href="https://pixabay.com/users/ryniu1234-902661/?utm_source=link-at
 Leopard Gecko:
 Image by <a href="https://pixabay.com/users/torstensimon-5039407/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3651875">torstensimon</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3651875">Pixabay</a>
 
+Ferret:
+Image by <a href="https://pixabay.com/users/pbarlowart-9059829/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4263192">PBarlowArt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4263192">Pixabay</a>
+
 # Links to Icons that I have used:
 
 Female icon:
