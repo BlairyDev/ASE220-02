@@ -316,7 +316,7 @@ function createCard(i){
     card.append(exitIcon,cardImage, cardBody, cardButton)
 
     cardBody.append(petBreedContainer, cardTitle, cardText)
-    //cardTitle.append(petName)
+
     petBreedContainer.append(genderIcon, petBreed)
 
 
@@ -330,13 +330,6 @@ let cards = document.querySelectorAll('.col-auto')
 
 const exitButtons = document.querySelectorAll('.btn-close')
 
-// $(".btn-close").on("click", () => {
-//     alert("test")
-// })
-
-// exitButtons.addEventListener('click', function(){
-//     console.log('test');
-// })
 
 exitButtons.forEach((button, index) => {
     button.addEventListener('click', function(e){
