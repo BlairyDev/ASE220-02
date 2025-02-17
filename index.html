@@ -15,6 +15,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+        <!-- Pacifico -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="script.js" defer></script>
         <title>Document</title>
@@ -29,12 +34,81 @@
             <div class="text-center">
                 <button class="load-btn btn btn-primary">Load More</button>
             </div>
-            
+        
             
            
         </main>
         
-        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Pet Description</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            
+                <div class="modal-body">
+
+                    <div class="main-container d-flex justify-content-around">
+                        <img class="pet-image">
+                        <div class="text-container">
+                            <h1 class="modal-petName pacifico-regular"></h1>
+                            <h2 class="pacifico-regular"></h2>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <ul class="d-flex justify-content-between mt-3">
+                        <div>
+                            <li>
+                                <h3 class="modal-petType">Type: Dog</h3>
+                            </li>
+                            <li>
+                                <h3 class="modal-petBreed">Breed: Golden Retriever</h3>
+                            </li>
+                            <li>
+                                <h3  class="modal-petSex">Sex: Male</h3>
+                            </li>
+                            <li>
+                                <h3 class="modal-petNeutred">Sprayed/Neutred: Yes</h3>
+                            </li>
+
+                        </div>
+
+                        <div>
+                            <li>
+                                <h3 class="modal-petAge">Age: 3</h3>
+                            </li>
+                            <li>
+                                <h3 class="modal-petID">Animal ID: 34621</h3>
+                            </li>
+                            <li>
+                                <h3 class="modal-petMicrochip">Microchip Number: 982000364789210</h3>
+                            </li>
+
+                        </div>
+                       
+                    
+                    </ul>
+            
+                    <div class="about-me__text">
+                        <p>
+                            Barkvinci has an instinctive talent for painting using a specially designed brush that fits in his mouth. Owners of this rare breed often find their floors covered in abstract paw-signed masterpieces, making them a favorite among eccentric art collectors.
+                        </p>
+    
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
     </body>
 </html>
 

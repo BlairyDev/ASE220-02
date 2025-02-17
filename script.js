@@ -248,7 +248,7 @@ let pets = [
     },
     {
         img: "images/Luna-Ferret.jpg",
-        name: "Luna",
+        name: "Lunar",
         petTitle: "The Ferret That Plays Hide and Seek",
         breed: "Ferret",
         type: "Ferret",
@@ -258,7 +258,7 @@ let pets = [
         animalID: "346999",
         microChip: "982345678912345",
         shortDescription: "is a master at hide and seek. Luna loves disappearing into small spaces, only to pop out later with a playful look on her face.",
-        fullDescription: "Luna is always ready to play hide and seek, finding the best hiding spots in the house. Her owners love trying to find her, as she’s always one step ahead."
+        fullDescription: "Lunar is always ready to play hide and seek, finding the best hiding spots in the house. Her owners love trying to find her, as she’s always one step ahead."
     }
     
 
@@ -267,12 +267,11 @@ let pets = [
 
 let cardRow = $('<div>', {class: 'row row-cols-1 row-cols-md-3 w-75 g-4'})
 
-let countCards = 0;
 
 for(let i = 0; i < 18; i++){
     
     createCard(i)
-    countCards++
+    
    
 }
 
@@ -281,7 +280,7 @@ function createCard(i){
 
     let card = $('<div>', {class: 'card  border rounded-1 h-100'})
 
-    let exitIcon = $('<button>', {class: 'btn-close p-3 ms-auto m-1'}).attr("type", "button").attr("aria-label", "Close")
+    let exitIcon = $('<button>', {class: 'exit-btn btn-close p-3 ms-auto m-1'}).attr("type", "button").attr("aria-label", "Close")
 
     let cardImage = $('<img>', {class: 'card-img-top rounded-top ps-3 pe-3'}).attr("src", pets[i].img)
 
@@ -306,7 +305,9 @@ function createCard(i){
 
     let cardText = $('<p>', {class: 'card-text'}).text(pets[i].shortDescription)
 
-    let cardButton = $('<a>', {class: 'btn btn-primary mb-3 ms-3 me-3'}).text("Get to know " + pets[i].name)
+    let cardButton = $('<button>', {class: 'view-btn btn btn-primary mb-3 ms-3 me-3 '}).text("Get to Know " + pets[i].name).attr("type", "button").attr("data-bs-toggle", "modal").attr("data-bs-target", "#exampleModal")
+
+    
 
     cardRow.append(cardColumn)
 
@@ -328,14 +329,41 @@ function createCard(i){
 
 let cards = document.querySelectorAll('.col-auto')
 
-const exitButtons = document.querySelectorAll('.btn-close')
+let exitButtons = document.querySelectorAll('.exit-btn')
+
+let viewButtons = document.querySelectorAll('.view-btn')
 
 
-exitButtons.forEach((button, index) => {
+
+viewButtons.forEach((button) =>{
+    button.addEventListener('click', function(e) {
+
+        const index = [...document.querySelectorAll('.view-btn')].indexOf(e.target);
+        $('.pet-image').attr("src",pets[index].img)
+        $('.modal-petName').text(pets[index].name + " " + pets[index].petTitle)
+        $('.modal-petType').text(`Type: ${pets[index].type}`)
+        $('.modal.petBreed').text(`Breed: ${pets[index].breed}`)
+        $('.modal-petSex').text(`Sex: ${pets[index].sex}`)
+        $('.modal-petNeutred').text(`Sprayed/Neutred: ${pets[index].neutred}`)
+        $('.modal-petAge').text(`Age: ${pets[index].age}`)
+        $('.modal-petID').text(`Animal ID: ${pets[index].animalID}`)
+        $('.modal-petMicrochip').text(`Microchip: ${pets[index].microChip}`)
+    })
+})
+
+
+
+exitButtons.forEach((button) => {
     button.addEventListener('click', function(e){
         
-        cards[index].remove()
-        
+        const index = [...document.querySelectorAll('.btn-close')].indexOf(e.target);
+        cards[index].remove();
+        pets.splice(index, 1);
+
+        cards = document.querySelectorAll('.col-auto');
+        viewButtons = document.querySelectorAll('.view-btn');
+        exitButtons = document.querySelectorAll('.btn-close');
+
     })
 })
 

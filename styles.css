@@ -39,9 +39,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* FONTS */
 .pacifico-regular {
-    font-family: "Pacifico", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Pacifico", serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
     
 }
 
@@ -92,10 +92,6 @@ img {
     color: #fff;
     background-color: #c4c2fe !important;
     border-color: #c4c2fe     !important;
-}
-
-.load-btn {
-    
 }
 
 
