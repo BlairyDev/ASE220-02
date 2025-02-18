@@ -24,8 +24,9 @@
 
 
 # Theme that was used
-Link to envato: https://elements.envato.com/united-pets-responsive-html5-template-BPKSCNS
-Specific theme: https://www.ingridkuhn.com/themes/unitedpets/index_preview.php?storefront=envato-elements 
+Link to Envato: https://elements.envato.com/united-pets-responsive-html5-template-BPKSCNS
+
+Specific theme that I took inspiration: https://www.ingridkuhn.com/themes/unitedpets/index_preview.php?storefront=envato-elements 
 
 
 # Photographers Image Credit
