@@ -417,9 +417,11 @@ $('.submit-btn').on("click", function() {
         }
     )
 
-
+    
     createCard(pets.length-1)
-
+    $(".col-auto").slice(0, 9).fadeIn()
+    $(".col-auto").slice(0, 100).fadeIn()
+    $(".load-btn").fadeOut()
 })
 
 
