@@ -9,7 +9,8 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    background-color: #FFE9D0 !important;
+    background-color: #fff2e3 !important;
+    /* background-color: #FFE9D0 !important; */
 }
   
 img, picture, video, canvas, svg {
@@ -46,6 +47,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.intro {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/jumbotron.jpg');
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    
+}
+
+.intro-container{
+    display: flex;
+    justify-content: center;
+}
+
+.intro-title {
+    color: white;
+    width: 65%;
+    padding-top: 60px;
+    font-size: 4em;
+}
+
+.welcome-desc {
+    width: 66%;
+    margin: 0 auto;
+}
+
+.welcome-desc div {
+    padding: 3em 0;
+}
+
+.welcome-desc p {
+    margin-bottom: 3em;
+}
+
+
+.create-btn-container {
+    margin: 0 auto; 
+    width: 73%;
+}
+
 .section {
     
 }
@@ -62,7 +101,9 @@ img {
 }
 
 .card-container {
-    margin: 1em 0;
+    margin: 0 auto;
+    width: 90%;
+    
 }
 
 .card {
@@ -197,6 +238,33 @@ ul {
 .info-content .d-flex {
     flex-direction: column;
 }
+
+.pattern-repeat {
+    background-image: url("images/patterns/pattern1.png");
+    background-repeat: repeat-x;
+    padding-bottom: 5rem;
+}
+
+
+.pattern-container {
+    position: absolute;
+    width: 20%;
+    
+}
+
+.top {
+    left: 20px;
+    z-index: -1;
+}
+
+
+
+
+
+.pattern {
+    width: 50%;
+}
+
 
 /* MEDIA QUERIES */
 

@@ -1,7 +1,8 @@
-# ASE220-02
+# ASE220-03
 
 # Members and Contributions
 
+### Part 1(ASE220-02)
 ### 1. Blair Asistin (Individual)
 #### Contributions
 - Made index.html using Bootstrap with responsive hover effects
@@ -10,6 +11,21 @@
 - Made all the detailed info page for each pets with Bootstrap
 
 
+### Part 2(ASE220-03 "current latest")
+### 1. Blair Asistin (Individual)
+#### Contributions
+- Change Bootstrap Card Group to Grid Cards
+- Replaced dedicated full details page for each pets into Bootstrap Modal
+- Added images and icons provided Photographer Credits and Icon credits in README.md
+- Added a delete, create and load more button for cards
+- Made all informations of pets into array of objects
+- Updated theme of page using Envanto website designs for inspirations
+
+
+
+# Theme that was used
+Link to envato: https://elements.envato.com/united-pets-responsive-html5-template-BPKSCNS
+Specific theme: https://www.ingridkuhn.com/themes/unitedpets/index_preview.php?storefront=envato-elements 
 
 
 # Photographers Image Credit

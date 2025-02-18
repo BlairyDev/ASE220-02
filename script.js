@@ -27,7 +27,7 @@ let pets = [
         animalID: "34621",
         microChip:"982000364789210",
         shortDescription: "has a habit of waiting by the door when the doorbell rings and greeting visitors with a friendly rub",
-        fullDescription: ""
+        fullDescription: "Whiskers, a Ragdoll Cat, has a unique habit of waiting by the door whenever the doorbell rings. Unlike most cats that hide when visitors arrive, Whiskers confidently walk up to greet them, rubbing against their legs like a friendly host. His breed is known for its affectionate and laid-back personality, making him more sociable than the average cat."
     },
 
     {
@@ -42,7 +42,7 @@ let pets = [
         animalID: "34621",
         microChip:"982000364789210",
         shortDescription: "has an uncanny ability to perfectly mimic his household’s doorbell, often causing his owners to get up and check the door even when no one is there",
-        fullDescription: "Whiskers, a Ragdoll Cat, has a unique habit of waiting by the door whenever the doorbell rings. Unlike most cats that hide when visitors arrive, Whiskers confidently walk up to greet them, rubbing against their legs like a friendly host. His breed is known for its affectionate and laid-back personality, making him more sociable than the average cat."
+        fullDescription: "Milo, a Cockatiel, has an uncanny ability to perfectly mimic his household’s doorbell, often causing his owners to get up and check the door even when no one is there. His favorite trick is switching between different tones, depending on his mood."
     },
 
     {
@@ -57,7 +57,7 @@ let pets = [
         animalID: "346341",
         microChip:"9823453364789210",
         shortDescription: "has a peculiar love for toy cars. His owner discovered this when Racy started pushing a small, remote-controlled car around with his nose",
-        fullDescription: "Milo, a Cockatiel, has an uncanny ability to perfectly mimic his household’s doorbell, often causing his owners to get up and check the door even when no one is there. His favorite trick is switching between different tones, depending on his mood."
+        fullDescription: "Racy, a European Hedgehog,has a peculiar love for toy cars. His owner discovered this when Racy started pushing a small, remote-controlled car around with his nose. Now, Racy is often seen happily navigating the house in his little car, spinning in circles and even racing down hallways. His love for movement and exploration is typical of hedgehogs, but his affinity for driving makes him a local legend among his owner's friends"
     },
 
     {
@@ -266,12 +266,13 @@ let pets = [
 ]
 
 let cardRow = $('<div>', {class: 'row row-cols-1 row-cols-md-3 w-75 g-4'})
-
+let cardCount = 0
+let localImg = true;
 
 for(let i = 0; i < 18; i++){
     
     createCard(i)
-    
+    cardCount++;
    
 }
 
@@ -282,8 +283,9 @@ function createCard(i){
 
     let exitIcon = $('<button>', {class: 'exit-btn btn-close p-3 ms-auto m-1'}).attr("type", "button").attr("aria-label", "Close")
 
+    
     let cardImage = $('<img>', {class: 'card-img-top rounded-top ps-3 pe-3'}).attr("src", pets[i].img)
-
+    
     let cardBody = $('<div>', {class: 'card-body'})
 
     let petBreedContainer = $('<div>', {class: 'd-flex align-items-center'})
@@ -305,7 +307,7 @@ function createCard(i){
 
     let cardText = $('<p>', {class: 'card-text'}).text(pets[i].shortDescription)
 
-    let cardButton = $('<button>', {class: 'view-btn btn btn-primary mb-3 ms-3 me-3 '}).text("Get to Know " + pets[i].name).attr("type", "button").attr("data-bs-toggle", "modal").attr("data-bs-target", "#exampleModal")
+    let cardButton = $('<button>', {class: 'view-btn btn btn-primary mb-3 ms-3 me-3 '}).text("Get to Know " + pets[i].name).attr("type", "button").attr("data-bs-toggle", "modal").attr("data-bs-target", "#viewModal")
 
     
 
@@ -333,13 +335,14 @@ let exitButtons = document.querySelectorAll('.exit-btn')
 
 let viewButtons = document.querySelectorAll('.view-btn')
 
+let row = document.querySelector('.row');
 
-
-viewButtons.forEach((button) =>{
-    button.addEventListener('click', function(e) {
-
-        const index = [...document.querySelectorAll('.view-btn')].indexOf(e.target);
-        $('.pet-image').attr("src",pets[index].img)
+row.addEventListener('click', function(e){
+    if (e.target && e.target.classList.contains('view-btn')) {
+ 
+        const index = [...document.querySelectorAll('.view-btn')].indexOf(e.target)
+      
+        $('.pet-image').attr("src", pets[index].img)
         $('.modal-petName').text(pets[index].name + " " + pets[index].petTitle)
         $('.modal-petType').text(`Type: ${pets[index].type}`)
         $('.modal.petBreed').text(`Breed: ${pets[index].breed}`)
@@ -348,35 +351,75 @@ viewButtons.forEach((button) =>{
         $('.modal-petAge').text(`Age: ${pets[index].age}`)
         $('.modal-petID').text(`Animal ID: ${pets[index].animalID}`)
         $('.modal-petMicrochip').text(`Microchip: ${pets[index].microChip}`)
-    })
+        $('.modal-petFullDesc').text(pets[index].fullDescription)
+    }
+    
 })
 
 
+row.addEventListener('click', function(e) {
+    if (e.target && e.target.classList.contains('btn-close')) {
 
-exitButtons.forEach((button) => {
-    button.addEventListener('click', function(e){
+        const index = [...document.querySelectorAll('.btn-close')].indexOf(e.target)
+        const card = e.target.closest('.col-auto');
+        card.remove()
         
-        const index = [...document.querySelectorAll('.btn-close')].indexOf(e.target);
-        cards[index].remove();
-        pets.splice(index, 1);
+        pets.splice(index, 1)
 
-        cards = document.querySelectorAll('.col-auto');
-        viewButtons = document.querySelectorAll('.view-btn');
-        exitButtons = document.querySelectorAll('.btn-close');
-
-    })
+        cardCount--
+    }
 })
+
+
 
 
 $(document).ready(function(){
     $(".col-auto").slice(0, 9).fadeIn()
     $(".load-btn").click(function() {
-        $(".col-auto").slice(0, 18).fadeIn()
+        $(".col-auto").slice(0, 100).fadeIn()
         $(this).fadeOut()
     })
 })
 
 
+$('.submit-btn').on("click", function() {
 
+
+    let modalName = document.querySelector(".modal-createName").value
+    let modalTitle = document.querySelector(".modal-createTitle").value
+    let modalAge = document.querySelector(".modal-createAge").value
+    let modalType = document.querySelector(".modal-createType").value
+    let modalBreed = document.querySelector(".modal-createBreed").value
+    let modalSex = $(".modal-createSex").val()
+    let modalNeutered = $(".modal-createNeutered").val()
+    let modalShortDesc = $(".modal-createShortDesc").val()
+    let modalFullDesc = $(".modal-createFullDesc").val()
+
+    let modalImage = document.querySelector(".modal-createImg").files[0]; 
+    let imageUrl = modalImage ? URL.createObjectURL(modalImage) : "images/Barkvinci-ThePaintingDog.jpg";
+
+
+    pets.push(
+        {
+            img: imageUrl,
+            name: modalName,
+            petTitle: modalAge,
+            breed: modalBreed,
+            type: modalType,
+            sex: modalSex,
+            neutered: modalNeutered,
+            age: modalAge,
+            animalID: Math.floor(100000 + Math.random() * 900000),
+            microChip: Math.floor(10**14 + Math.random() * 9 * 10**14).toString(),
+            shortDescription: modalShortDesc,
+            fullDescription: modalFullDesc
+            
+        }
+    )
+
+
+    createCard(pets.length-1)
+
+})
 
 
