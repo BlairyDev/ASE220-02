@@ -3,13 +3,12 @@ GET http://127.0.0.1:3000
 
 
 ### API ENDPOINTS
-
 ### Check all changes in the file data.json in all of this API Request
 
-### Create a new data
+### Create a new data in data.json
 POST http://127.0.0.1:3000/api/pets
 Content-type: application/json
-
+//Example input
 {
     "img": "images/Barkvinci-ThePaintingDog.jpg",
     "name": "Courage", 
@@ -25,13 +24,13 @@ Content-type: application/json
     "fullDescription": "Barkvinci has an instinctive talent for painting using a specially designed brush that fits in his mouth. Owners of this rare breed often find their floors covered in abstract paw-signed masterpieces, making them a favorite among eccentric art collectors."
 }
 
-### Retrive a new data
+### Retrive a new data in data.json
 GET http://127.0.0.1:3000/api/pets
 
-### Modify data
+### Modify data in data.json
 PUT http://127.0.0.1:3000/api/pets/0
 Content-type: application/json
-
+//Example input
 {
     "img": "images/Barkvinci-ThePaintingDog.jpg",
     "name": "Courage", 
@@ -47,5 +46,5 @@ Content-type: application/json
     "fullDescription": "Barkvinci has an instinctive talent for painting using a specially designed brush that fits in his mouth. Owners of this rare breed often find their floors covered in abstract paw-signed masterpieces, making them a favorite among eccentric art collectors."
 }
 
-### Delete a data
+### Delete a data in data.json
 DELETE http://127.0.0.1:3000/api/pets/0
