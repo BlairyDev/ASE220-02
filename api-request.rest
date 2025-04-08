@@ -46,5 +46,5 @@ Content-type: application/json
     "fullDescription": "Barkvinci has an instinctive talent for painting using a specially designed brush that fits in his mouth. Owners of this rare breed often find their floors covered in abstract paw-signed masterpieces, making them a favorite among eccentric art collectors."
 }
 
-### Delete a data in data.json (This deletes data from index 0, change the number for different index to delete)
+### Delete a data in data.json (This deletes data from index 0, change the number for different data to delete)
 DELETE http://127.0.0.1:3000/api/pets/0
