@@ -240,7 +240,7 @@ ul {
 }
 
 .pattern-repeat {
-    background-image: url("images/patterns/pattern1.png");
+    background-image: url("icons/patterns/pattern1.png");
     background-repeat: repeat-x;
     padding-bottom: 5rem;
 }
