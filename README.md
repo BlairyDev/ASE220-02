@@ -2,16 +2,13 @@
 
 # Members and Contributions
 
-### Part 1(ASE220-02)
+### Part 3(ASE220-05 "current latest")
 ### 1. Blair Asistin (Individual)
 #### Contributions
-- Made index.html using Bootstrap with responsive hover effects
-- Added fonts using Google fonts
-- Added images and icons provided Photographer Credits and Icon credits in README.md
-- Made all the detailed info page for each pets with Bootstrap
+ - 
 
 
-### Part 2(ASE220-03 "current latest")
+### Part 2(ASE220-03)
 ### 1. Blair Asistin (Individual)
 #### Contributions
 - Change Bootstrap Card Group to Grid Cards
@@ -20,6 +17,15 @@
 - Added a delete, create and load more button for cards
 - Made all informations of pets into array of objects
 - Updated theme of page using Envanto website designs for inspirations
+
+
+### Part 1(ASE220-02)
+### 1. Blair Asistin (Individual)
+#### Contributions
+- Made index.html using Bootstrap with responsive hover effects
+- Added fonts using Google fonts
+- Added images and icons provided Photographer Credits and Icon credits in README.md
+- Made all the detailed info page for each pets with Bootstrap
 
 
 

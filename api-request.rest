@@ -1,0 +1,51 @@
+### HTML ENDPOINT: Your index page
+GET http://127.0.0.1:3000
+
+
+### API ENDPOINTS
+
+### Check all changes in the file data.json in all of this API Request
+
+### Create a new data
+POST http://127.0.0.1:3000/api/pets
+Content-type: application/json
+
+{
+    "img": "images/Barkvinci-ThePaintingDog.jpg",
+    "name": "Courage", 
+    "petTitle": "Cowardly-Dog",
+    "breed": "Pink Dog",
+    "type": "Dog",
+    "sex": "Male",
+    "neutered": "Yes",
+    "age": "3",
+    "animalID": "34621",
+    "microChip": "982000364789210",
+    "shortDescription": "has an impressive talent for painting with a brush held in his mouth, creating abstract works that have intrigued art collectors",
+    "fullDescription": "Barkvinci has an instinctive talent for painting using a specially designed brush that fits in his mouth. Owners of this rare breed often find their floors covered in abstract paw-signed masterpieces, making them a favorite among eccentric art collectors."
+}
+
+### Retrive a new data
+GET http://127.0.0.1:3000/api/pets
+
+### Modify data
+PUT http://127.0.0.1:3000/api/pets/0
+Content-type: application/json
+
+{
+    "img": "images/Barkvinci-ThePaintingDog.jpg",
+    "name": "Courage", 
+    "petTitle": "Cowardly-Dog",
+    "breed": "Pink Dog",
+    "type": "Dog",
+    "sex": "Male",
+    "neutered": "Yes",
+    "age": "3",
+    "animalID": "34621",
+    "microChip": "982000364789210",
+    "shortDescription": "has an impressive talent for painting with a brush held in his mouth, creating abstract works that have intrigued art collectors",
+    "fullDescription": "Barkvinci has an instinctive talent for painting using a specially designed brush that fits in his mouth. Owners of this rare breed often find their floors covered in abstract paw-signed masterpieces, making them a favorite among eccentric art collectors."
+}
+
+### Delete a data
+DELETE http://127.0.0.1:3000/api/pets/0
