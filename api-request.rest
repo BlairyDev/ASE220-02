@@ -9,6 +9,7 @@ GET http://127.0.0.1:3000
 POST http://127.0.0.1:3000/api/pets
 Content-type: application/json
 //Example input
+
 {
     "img": "images/Barkvinci-ThePaintingDog.jpg",
     "name": "Courage", 
@@ -27,10 +28,11 @@ Content-type: application/json
 ### Retrive a new data in data.json
 GET http://127.0.0.1:3000/api/pets
 
-### Modify data in data.json
+### Modify data in data.json (This modifies data from index 0, change the number for different data to delete)
 PUT http://127.0.0.1:3000/api/pets/0
 Content-type: application/json
 //Example input
+
 {
     "img": "images/Barkvinci-ThePaintingDog.jpg",
     "name": "Courage", 

@@ -31,8 +31,10 @@
     ```terminal
     http://localhost:3000/
 
-5. To test HTTP Requests open "api-request.rest" and check "data.json" for changes
+5. To test HTTP Requests open "api-request.rest" and check "data.json" for changes. If you Add, modify, and delete the formatting of data.json will going to be messy. Check the console log in terminal to see outputs of each
 
+###
+###
 
 ### Part 2(ASE220-03)
 ### 1. Blair Asistin (Individual)

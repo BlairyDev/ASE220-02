@@ -54,6 +54,7 @@ app.put('/api/pets/:id', (req, res)=> {
 
 	jsonData[id] = content
 
+	console.log(jsonData)
 
 	fs.writeFileSync('./data.json',JSON.stringify(jsonData));
 	res.send(JSON.stringify(content));
