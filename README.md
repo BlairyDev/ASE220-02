@@ -5,7 +5,31 @@
 ### Part 3(ASE220-05 "current latest")
 ### 1. Blair Asistin (Individual)
 #### Contributions
- - 
+ - Created a Express Server
+ - Made the CRUD operations in server
+ - Grab data for pet cards from data.json
+ - Website is able to create and delete a pet cards
+ - Website is able to load new pet cards
+ 
+# Instructions to run the website
+
+1. Clone the repository
+    ```terminal
+    git clone git@github.com:BlairyDev/ASE220-02.git
+                        or
+    git clone https://github.com/BlairyDev/ASE220-02.git
+
+2. Install dependencies in terminal
+    ```terminal
+    npm install
+
+3. Run the server(to make MangaUpdates API work)
+    ```terminal
+    node server.js
+
+4. Open website with this link
+    ```terminal
+    http://localhost:3000/
 
 
 ### Part 2(ASE220-03)
