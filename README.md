@@ -31,6 +31,8 @@
     ```terminal
     http://localhost:3000/
 
+5. To test HTTP Requests open "api-request.rest" and check "data.json" for changes
+
 
 ### Part 2(ASE220-03)
 ### 1. Blair Asistin (Individual)
