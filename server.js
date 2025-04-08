@@ -34,7 +34,7 @@ app.post('/api/pets', (req, res)=> {
 	jsonData.push(content)
 	console.log(jsonData)
 
-	fs.writeFileSync('./data.json',JSON.stringify(jsonData, null, 2));
+	fs.writeFileSync('./data.json',JSON.stringify(jsonData));
 	res.send(content);
 })
 
@@ -56,7 +56,7 @@ app.put('/api/pets/:id', (req, res)=> {
 
 
 	fs.writeFileSync('./data.json',JSON.stringify(jsonData));
-	res.send(JSON.stringify(content, null, 2));
+	res.send(JSON.stringify(content));
 })
 
 //Deleta a data in data.json
@@ -71,7 +71,7 @@ app.delete('/api/pets/:id', (req, res)=> {
 
     console.log(jsonData)
 
-    fs.writeFileSync('./data.json', JSON.stringify(jsonData, null, 2))
+    fs.writeFileSync('./data.json', JSON.stringify(jsonData))
 
 	res.send(JSON.stringify({message:'data deleted'}));
 })
